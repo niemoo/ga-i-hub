@@ -26,7 +26,7 @@ ReactGA.initialize(import.meta.env.VITE_GA_MEASUREMENT_ID);
 ReactGA.send({
   hitType: 'pageview',
   page: window.location.pathname,
-  title: 'i-Hub Homepage ID',
+  title: 'i-Hub App First Visit',
 });
 
 export default function App() {
