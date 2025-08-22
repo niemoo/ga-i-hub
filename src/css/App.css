@@ -1,0 +1,6 @@
+.text-hero {
+  background: linear-gradient(96.82deg, #2fbcb9 100%, #5f80c5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

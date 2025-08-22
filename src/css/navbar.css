@@ -1,0 +1,15 @@
+/* Navbar.css */
+.primary-gradient-100 {
+  /* Primary/Gradient 100 */
+  background: linear-gradient(97.76deg, #4d6bab -0.12%, #213e7a 99.88%);
+}
+
+/* Add any additional styles as needed */
+.navbar-link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-link p:hover {
+  text-decoration: underline;
+}

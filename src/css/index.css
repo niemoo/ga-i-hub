@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Utility Color */
+.color-neutral-black-60 {
+  color: rgba(33, 36, 58, 0.6);
+}
+
+.color-neutral-black-100 {
+  color: #21243a;
+}
+
+.color-neutral-black-20 {
+  color: rgba(33, 36, 58, 0.2);
+}
+
+.color-neutral-white-100 {
+  color: #ffffff;
+}
+
+.color-neutral-white-60 {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.color-primary-blue-100 {
+  color: #213e7a;
+}
+
+.color-secondary-red-100 {
+  color: #b84343;
+}
+
+/* Utility Background */
+.bg-secondary-red-100 {
+  background: #b84343;
+}
+
+.bg-neutral-white-100 {
+  background: #ffffff;
+}
+
+.primary-gradient-100 {
+  background: linear-gradient(97.76deg, #4d6bab -0.12%, #213e7a 99.88%);
+}
+
+.bg-neutral-black-30 {
+  background: rgba(33, 36, 58, 0.3);
+}
+
+.bg-primary-soft-blue-100 {
+  background: #eceff4;
+}
+
+.bg-secondary-cyan-100 {
+  background: #2fbcb9;
+}
+
+.bg-primary-gradient-100 {
+  background: linear-gradient(97.76deg, #4d6bab -0.12%, #213e7a 99.88%);
+}
+
+/* Utility Border */
+
+.border-neutral-white-20 {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.border-neutral-black-30 {
+  border: 1px dashed rgba(33, 36, 58, 0.3);
+}
+
+.border-primary-blue-100 {
+  border: 1px solid #213e7a;
+}
+
+.border-neutral-black-10 {
+  border-top: 1px solid rgba(33, 36, 58, 0.1);
+}
+
+.border-neutral-light-1 {
+  border: 1px dashed #dddddd;
+}
+
+.blur-4 {
+  backdrop-filter: blur(4px);
+}
+
+.bg-secondary-cyan-100 {
+  background: #2fbcb9;
+}
+
+.border-neutral-white-100 {
+  border: 4px solid #ffffff;
+}
+
+.font-slab {
+  font-family: 'Roboto Slab';
+}
+
+.border-primary-blue-20 {
+  border: 1px dashed rgba(33, 62, 122, 0.2);
+}
+
+.bg-neutral-white-100 {
+  background: #ffffff;
+}
+
+.shadow-card {
+  box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.04);
+}
+
+.border-right-plan {
+  border-right: 1px solid rgba(33, 36, 58, 0.2);
+}
+
+/* Swipper */
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+  color: #233672;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: -20px !important;
+  left: auto !important;
+  width: 56px !important;
+  height: 56px !important;
+  border-radius: 32px !important;
+  background: #ffffff !important;
+  box-shadow: 0px 20px 40px rgba(33, 36, 58, 0.04) !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: -20px !important;
+  width: 56px !important;
+  height: 56px !important;
+  border-radius: 32px !important;
+  background: #ffffff !important;
+  box-shadow: 0px 20px 40px rgba(33, 36, 58, 0.04) !important;
+}
+
+@layer components {
+  .benefit:first-child > div {
+    @apply border border-dashed border-[rgba(33,62,122,0.2)] p-4;
+  }
+
+  .benefit > div > span {
+    @apply text-[rgba(33,36,58,0.3)];
+  }
+
+  .benefit > div.active > span {
+    @apply text-[#21243a];
+  }
+
+  .benefit > div.active > span:first-child {
+    @apply text-[#213e7a];
+  }
+
+  .benefit-item span,
+  .benefit-item h5 {
+    @apply text-[#21243a33];
+  }
+
+  .benefit-item.active span {
+    @apply text-[#213e7a];
+  }
+
+  .benefit-item.active h5 {
+    @apply text-[#21243a];
+  }
+
+  /* Custom color classes from the original */
+  .color-neutral-black-100 {
+    @apply text-[#21243A];
+  }
+
+  .color-neutral-black-60 {
+    @apply text-[rgba(33,36,58,0.6)];
+  }
+
+  .color-neutral-white-100 {
+    @apply text-white;
+  }
+
+  .color-neutral-white-60 {
+    @apply text-white/60;
+  }
+
+  .bg-primary-soft-blue-100 {
+    @apply bg-[#EBF0F9];
+  }
+
+  .primary-gradient-100 {
+    @apply bg-gradient-to-r from-[#184079] to-[#3559A9];
+  }
+}
