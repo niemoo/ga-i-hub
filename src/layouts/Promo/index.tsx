@@ -54,7 +54,7 @@ export default function PromoPageLayout({ lang_code }: { lang_code: string }) {
 
     fetchDataImage();
     fetchDataPromo();
-  }, []);
+  }, [lang_code]);
 
   return (
     <div className="w-11/12 mx-auto px-[24px] md:px-[72px]">

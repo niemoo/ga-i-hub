@@ -1,9 +1,16 @@
 import FAQCard from './FAQCard';
 
+interface FAQItem {
+  id: number;
+  title: string;
+  desc: string;
+  open?: boolean;
+}
+
 interface FAQListProps {
   activeTab: string;
-  allFaqs: any[];
-  faqs: { [key: string]: any[] };
+  allFaqs: FAQItem[];
+  faqs: { [key: string]: FAQItem[] };
   toggleFAQ: (id: number) => void;
 }
 

@@ -45,7 +45,7 @@ export default function PlanDetailsLayout({ lang_code }: { lang_code: string }) 
     }
 
     setPlan(selectedPlan || null);
-  }, [slug]);
+  }, [slug, navigate]);
 
   return (
     <div className="header relative">
